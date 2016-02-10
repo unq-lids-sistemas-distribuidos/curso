@@ -2,13 +2,13 @@
 
 Este material está basado en el excelente material de Johan Morellius.
 
-These are a set of assignments that we I have used in several courses in Distributed Systems. They have been used to exemplify different systems, algorithms or aspects such as performance and fault tolerance.
+Estos son una serie de trabajos usado en diversos cursos en Sistemas Distribuidos. Los mismos fueron usados para ejemplificar diferentes sistemas, algoritmos o aspectos como performance y fault tolerance.
 
-The students have had a week of half-time study to complete the assignments and write a small report on their findings. After having handed in the reports each assignment is discussed during a seminar where one can also extend the system or do experiments using more computers.
+La modalidad del curso será la de taller y duarante el recorrido del curso los alumnos irán estudiando los diversos aspectos de los sistemas distribuidos a medida que resuelven los problemas que se van presentando y experimentan en el laboratorio. Una vez finalizado el trabajo se pide a los alumnos que escriban un reporte para ser discutido en clase sobre los allazgos, problemas que se presentaron y posibles extensiones.
 
-The assignments do assume basic understanding of Erlang but I've deliberately used a limited set of Erlang functionality. I have not used OTP since I think that this will hide complexity or for many of the smaller assignments add too much code. Nor do I use some of the libraries that handle group communication or global registry. The aim is often for the students to develop these themself and better understand the pros and cons of different strategies.
+Los trabajos asumen cierto connocimiento básico de Erlang, pero se ha limitado el uso a un conjunto de funcionalidades básicas. Se omitió el uso de OTP, dado que se piensa que esconde la complejidad subyacente de muchos de los trabajos. Tampoco que usan librerías que manejan comunicación de grupos o registro global. EL objetivo es que los alumnos desarrollen las soluciones a estos problemas entendiendo mejor los pros y contras de las diferentes estrategias. Sin embargo, se recomienda a aquellos interesados al promediar el curso o posterior al mismo aparender los servicios y beneficios de OTP, base fundamental del desarrollo de sistemas altamente escalables y tolerantes a falla en Erlang.
 
-All assignments are work in progress and are likely to change in the future. All assignments are licensed under Creative Commons Attribution.
+Los trabajos están licenciados bajo Creative Commons Attribution.
 
 ## An Erlang primer [x]
 
