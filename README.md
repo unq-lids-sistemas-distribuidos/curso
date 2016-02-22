@@ -2,7 +2,7 @@
 
 Este material está basado en el excelente material de Johan Morellius.
 
-Estos son una serie de trabajos usado en diversos cursos en Sistemas Distribuidos. Los mismos fueron usados para ejemplificar diferentes sistemas, algoritmos o aspectos como performance y fault tolerance.
+Estos son una serie de trabajos usados en diversos cursos en Sistemas Distribuidos. Los mismos fueron usados para ejemplificar diferentes sistemas, algoritmos o aspectos como performance y fault tolerance.
 
 La modalidad del curso será la de taller y duarante el recorrido del curso los alumnos irán estudiando los diversos aspectos de los sistemas distribuidos a medida que resuelven los problemas que se van presentando y experimentan en el laboratorio. Una vez finalizado el trabajo se pide a los alumnos que escriban un reporte para ser discutido en clase sobre los allazgos, problemas que se presentaron y posibles extensiones.
 
@@ -10,34 +10,33 @@ Los trabajos asumen cierto connocimiento básico de Erlang, pero se ha limitado 
 
 Los trabajos están licenciados bajo Creative Commons Attribution.
 
-## An Erlang primer [x]
+## Una Introducción a Erlang [x]
 
-This is not a crash course in Erlang since there are plenty of tutorials
-available on the web. I will however describe the tools that you need so that you can get a programming environment up and running. I will take for granted that you know some programming languages, have heard of functional programing and that recursion is not a mystery to you.
+Esto no es un curso rápido de Erlang dado que hay muchos tutoriales disponibles en la web. Sin embargo en se describirán las herramientas que se necesitan para tener un ambiente andando. Se da por sentado que tienen una cierta experiencia en lenguajes de programación y programación funcional y particularmente recursión.
 
 -   [01-crash](./01-crash.pdf)
 
-## The Mandelbrot set (Opcional)
+## El Conjunto de  Mandelbrot (Opcional)
 
-Calculating the Mandelbrot set is an easy task that can be done in parallel if we have multiple cores or several machines. This implementation is not the fastest on earth but it serves its purpose of being a fin task to start with; it can easily be improved.
+Calcular un conjunto de Mandelbrot es una tarea que puede ser hecha en paralelo si se tienen varios cores o varias máquinas. La implementación brindada no es la más rápida pero sirve con el propósito de ser una tarea para comenzar; puede ser facilmente mejorarda.
 
 -   [02-mandel](./02-mandel.pdf)
 
-## Primy: finding a large prime (Opcional)
+## Primy: encontrando números primos grandes (Opcional)
 
-Your task will be to implement a distributed system that will find large primes. The system should have one server that is in control of the computation and a dynamic set of workers that are assigned numbers to test for primarity.
+En esta tarea hay que implementar un sistema distribuido que encuentre números primos grandes. El sistema debe tener un server que se encarga de controlar el cálculo y un conjunto dinámico de workers a los que se asigna testear si un número dado es primo o no.
 
 -   [03-primy](./03-primy.pdf)
 
-## Rudy: a small web server [x]
+## Rudy: un pequeño web server [x]
 
-Your task is to implement a small web server in Erlang. The aim of this exercise is that you should be able to: describe the procedures for using a socket API, describe the structure of a server process and describe the HTTP protocol. As a side effect you will also learn how to use do some Erlang programming.
+En esta tarea se debe implementar un pequeño web server. El objetivo de este ejercicio es ser capaces de: describir el procedimiento para usar la API de __sockets__, describir la estructura de un proceso server y describir el protocolo __HTTP__. Como efecto secundario se aprenderá a utilizar algunas caraterísticas de Erlang.
 
 -   [04-rudy.pdf](./04-rudy.pdf)
 
 ## Namy: un name server distribuido [x]
 
-La tarea es implementar un _name server_ distribuido similar a DNS. En lugar de guardar direcciones vamos a guardar identificadores de _hosts_. Nuestro servidor de DNS no podrá interoperar con servidores de DNS reales pero nos mostrará los principios de caching de información en una estructura de árbol.  
+La tarea es implementar un _name server_ distribuido similar a DNS. En lugar de guardar direcciones vamos a guardar identificadores de _hosts_. Nuestro servidor de DNS no podrá interoperar con servidores de DNS reales pero nos mostrará los principios de caching de información en una estructura de árbol.
 
 -   [05-namy.pdf](./05-namy.pdf)
 
@@ -45,21 +44,21 @@ __Ref__:
 
   - Distributed Systems and Concepts - Chapter 13: Name Services.
 
-## Routy: a small routing protocol [x]
+## Routy: un pequeño protocolo de ruteo [x]
 
-Your task is to implement a link-state routing protocol in Erlang. The link-state protocol is used in for example OSPF, the most used routing protocol for Internet routers. The aim of this exercise is that you should be able to: describe the structure of a link-state routing protocol, describe how a consistent view is maintained and reflect on the problems related to network failures.
+La tarea es implementar un protocolo de ruteo __link-state__ en Erlang. El protocolo link-state es usado por ejemplo en OSPF, el protocolo más usado por los routers de Internet. El objetivo de este ejercicio es ser capaces de: describir la estructura general del un protocolo de ruteo link-state, describir como se mantiene una vista consistente y reflejar los problemas relacionados a fallos de red.
 
 -   [06-routy.pdf](./06-routy.pdf)
 
 ## Detector [x]
 
-Failure detectors are the heart of distributed systems. This small tutorial will show you how the failure detectors work in Erlang and their limitations.
+Los detectores de fallas son el corazón de los sistemas distribuidos. En este pequeño tutorial se mostrará como funcionan en Erlang y sus limitaciones.
 
 -   [07-detector.pdf](./07-detector.pdf)
 
 ## Casty (Opcional)
 
-In this assignment you will build a streaming media network. We will play around with shoutcast streams and build proxies, distributors and peer-to-peer clients. You will use the Erlang bit-syntax to implement a communication protocol over HTTP. The parser will be implemented using higher order functions to hide the socket interface. You will learn how to decode a mp3 audio stream and make it available for connecting media players. Sounds fun? - Let's go!
+En esta tarea construiremos una red de media streaming. Jugaremos con streams de _shoutcast_ y construiremos proxies, distributors y clientes peer-to-peer. Usaremos la __bit-syntax__ de Erlang para implementar el protocolo de comunicación sobre HTTP. El parser será implementado usando funciones de alto orden para esconder la interfaz de sockets. Aprenderemos como decodificar un stream de audio mp3 y ponerlo disponible para la conexión de reproductores de audio.
 
 -   [08-casty.pdf](./08-casty.pdf)
 
