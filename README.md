@@ -105,7 +105,7 @@ In this exercise you will learn how to implement a snap-shot algorithm. As an ex
 
 -   [15-garby.pdf](./15-garby.pdf)
 
-## Opty: optimistic concurrency control (OK)
+## Opty: optimistic concurrency control [x]
 
 In this session you will implement a transaction server using optimistic concurrency control. You will also learn how to implement a updatable data structure in Erlang that can be accessed by concurrent, possibly distributed, processes. Before you start you should know how optimistic concurrency control with backwards validation works.
 
