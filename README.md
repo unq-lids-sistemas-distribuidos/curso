@@ -36,8 +36,7 @@ En esta tarea se debe implementar un pequeño web server. El objetivo de este ej
 
 ## Namy: un name server distribuido [x]
 
-La tarea es implementar un _name server_ distribuido similar a DNS. En lugar de guardar direcciones vamos a guardar identificadores de _hosts_. Nuestro servidor de DNS no podrá interoperar con servidores de DNS reales pero nos mostrará los principios de caching de información en una estructura de árbol.
-
+La tarea será implementar un _name server_ distribuido similar a _DNS_. En lugar de direcciones vamos a almacenar identificadores de procesos a hosts. No va a poder inter-operar con servidores de DNS reales pero nos mostrará los principios de caching en una estructura de árbol.
 -   [05-namy.pdf](./05-namy.pdf)
 
 __Ref__:
