@@ -4,7 +4,7 @@ Este material está basado en el excelente material de Johan Morellius.
 
 Estos son una serie de trabajos usados en diversos cursos en Sistemas Distribuidos. Los mismos fueron usados para ejemplificar diferentes sistemas, algoritmos o aspectos como performance y fault tolerance.
 
-La modalidad del curso será la de taller y duarante el recorrido del curso los alumnos irán estudiando los diversos aspectos de los sistemas distribuidos a medida que resuelven los problemas que se van presentando y experimentan en el laboratorio. Una vez finalizado el trabajo se pide a los alumnos que escriban un reporte para ser discutido en clase sobre los allazgos, problemas que se presentaron y posibles extensiones.
+La modalidad del curso será la de taller y durante el recorrido del curso los alumnos irán estudiando los diversos aspectos de los sistemas distribuidos a medida que resuelven los problemas que se van presentando y experimentan en el laboratorio. Una vez finalizado el trabajo se pide a los alumnos que escriban un reporte para ser discutido en clase sobre los hallazgos, problemas que se presentaron y posibles extensiones.
 
 Los trabajos asumen cierto connocimiento básico de Erlang, pero se ha limitado el uso a un conjunto de funcionalidades básicas. Se omitió el uso de OTP, dado que se piensa que esconde la complejidad subyacente de muchos de los trabajos. Tampoco que usan librerías que manejan comunicación de grupos o registro global. EL objetivo es que los alumnos desarrollen las soluciones a estos problemas entendiendo mejor los pros y contras de las diferentes estrategias. Sin embargo, se recomienda a aquellos interesados al promediar el curso o posterior al mismo aparender los servicios y beneficios de OTP, base fundamental del desarrollo de sistemas altamente escalables y tolerantes a falla en Erlang.
 
@@ -61,27 +61,27 @@ En esta tarea construiremos una red de media streaming. Jugaremos con streams de
 
 -   [08-casty.pdf](./08-casty.pdf)
 
-## Loggy: a logical time logger [x]
+## Loggy: un time logger lógico [x]
 
-In this exercise you will learn how to use logical time in a practical example. The task is to implement a logging procedure that receives log events from a set of workers. The events are tagged with the Lamport time stamp of the worker and the events must be ordered before written to stdout. It's slightly more tricky than one might first think.
+En este ejercicio vamos a aprender a usar tiempo lógico de forma práctica. La tarea es implementar un sistema de logging que reciva eventos de log de un conjunto de workers. Los eventos estarán tageados con un timestamp de Lamport del worker y deben ser ordenados antes de ser mostrados en pantalla (stdout).Es un poco más complicado de lo que uno podría pesar en primer lugar.
 
 -   [09-loggy.pdf](./09-loggy.pdf)
 
-## Goldy: a distributed game (Opcional)
+## Goldy: un juego distribuido (Opcional)
 
-This seminar will serve two purpose; learning how to program a distributed application in Erlang and understanding why distributed applications are not as simple to control as it might first seam.
+Este curso sirve a 2 propósitos; aprender a programar aplicaciones distribuidas en Erlang y entender por qué las aplicaciones distribuidas no son tan fáciles de controlar como podría pensarse en primer lugar.
 
 -   [10-goldy.pdf](./10-goldy.pdf)
 
 ## Toty (Opcional)
 
-The task is to implement a total order multicast service using a distributed algorithm. The algorithm is the one used in the ISIS system and is based on requesting proposals from all nodes in a group.
+La tarea es implementar un servicio multicast con orden total usando un algoritmo distribuido. El algoritmo es el usado por el sistema __ISIS__ y está basado en pedir propuestas a todos los nodos de un grupo.
 
 -   [11-toty.pdf](./11-toty.pdf)
 
 ## Muty (Opcional)
 
-Your task is to implement a distributed mutual-exclusion lock. The lock will use a multicast strategy and work in a asynchronous network where we do not have access to a synchronized clock. You will do the implementation in three versions: the dead-lock prone, the unfair and the Lamport clocked. Before you start you should have good theoretical knowledge of the multicast algorithm and how Lamport clocks work.
+La tarea es implementar un lock que provea exclusión mutua distribuido. El lock va a usar una estrategia de multicast y trabajar en una red asincrónica donde no tenemos acceso a un reloj sincronizado. Vamos a hacer la implementación en 3 versiones: la propensa a deadlock, la unfair y la basada en relojes de Lamport. Antes de empezar deberíamos tener una buena base teórica de multicast y como funcionan los relojes de Lamport.
 
 -   [12-muty.pdf](./12-muty.pdf)
 
