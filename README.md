@@ -1,6 +1,6 @@
 # Sistemas Distribuidos (en Erlang)
 
-Este material está basado en el excelente material de Johan Morellius.
+Este material está basado en el excelente material de **Johan Morellius**  (https://people.kth.se/~johanmon/dse.html).
 
 Estos son una serie de trabajos usados en diversos cursos en Sistemas Distribuidos. Los mismos fueron usados para ejemplificar diferentes sistemas, algoritmos o aspectos como performance y fault tolerance.
 
@@ -14,7 +14,7 @@ Los trabajos están licenciados bajo Creative Commons Attribution.
 
 Esto no es un curso rápido de Erlang dado que hay muchos tutoriales disponibles en la web. Sin embargo en se describirán las herramientas que se necesitan para tener un ambiente andando. Se da por sentado que tienen una cierta experiencia en lenguajes de programación y programación funcional y particularmente recursión.
 
--   [01-crash](./01-crash.pdf)
+-   [01-crash](./labs/01-crash.pdf)
 
 ## El Conjunto de  Mandelbrot (Opcional)
 
@@ -32,12 +32,13 @@ En esta tarea hay que implementar un sistema distribuido que encuentre números 
 
 En esta tarea se debe implementar un pequeño web server. El objetivo de este ejercicio es ser capaces de: describir el procedimiento para usar la API de __sockets__, describir la estructura de un proceso server y describir el protocolo __HTTP__. Como efecto secundario se aprenderá a utilizar algunas caraterísticas de Erlang.
 
--   [04-rudy.pdf](./04-rudy.pdf)
+-   [04-rudy.pdf](./labs/04-rudy.pdf)
 
 ## Namy: un name server distribuido [x]
 
 La tarea será implementar un _name server_ distribuido similar a _DNS_. En lugar de direcciones vamos a almacenar identificadores de procesos a hosts. No va a poder inter-operar con servidores de DNS reales pero nos mostrará los principios de caching en una estructura de árbol.
--   [05-namy.pdf](./05-namy.pdf)
+
+-   [05-namy.pdf](./labs/05-namy.pdf)
 
 __Ref__:
 
@@ -87,7 +88,8 @@ La tarea es implementar un lock que provea exclusión mutua distribuido. El lock
 
 ## Groupy: a group membership service (Opcional)
 
-This is an assignment were you will implement a group membership service that provides atomic multicast. The aim is to have several application layer processes with a coordinated state i.e. they should all perform the same sequence of state changes. A node that wish to perform a state change must first multicast the change to the group so that all nodes can execute it. Since the multicast layer provides total order, all nodes will be synchronized.
+En este proyecto implementaremos un servicio de mebresía de grupo que provee multicast atómico. El objetivo es tener varias capas de aplicación con un estado coordinado, p. ej. todas deben ejecutar la misma secuencia de cambios de estado. Un nodo que desea hacer un cambio de su estado interno debe primero hacer multicast del cambio de forma tal que todos los nodos del grupo ejecuten el mismo cambio.
+Dado que la capa de multicast provee orden total, todos los nodos van a estar sincronizados.
 
 -   [13-groupy.pdf](./13-groupy.pdf)
 
