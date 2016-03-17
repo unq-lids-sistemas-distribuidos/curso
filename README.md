@@ -129,3 +129,9 @@ This exercise will give you the opportunity to learn the Paxos algorithm for gai
 In this assignment you will implement a distributed hash table following the Chord scheme. In order to understand what you're about to do you should have a basic understanding of Chord and preferably have read the original paper.
 
 -   [19-chordy.pdf](./19-chordy.pdf)
+
+
+## Slides
+
+- Curso: [00-sistemas_distribuidos](./slides/00-sistemas_distribuidos)
+- Intro a Erlang: [01-intro_erlang](./slides/01-intro_erlang.pdf)
