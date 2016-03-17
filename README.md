@@ -133,5 +133,5 @@ In this assignment you will implement a distributed hash table following the Cho
 
 ## Slides
 
-- Curso: [00-sistemas_distribuidos](./slides/00-sistemas_distribuidos)
+- Curso: [00-sistemas_distribuidos](./slides/00-sistemas_distribuidos.pdf)
 - Intro a Erlang: [01-intro_erlang](./slides/01-intro_erlang.pdf)
