@@ -86,7 +86,7 @@ La tarea es implementar un lock que provea exclusión mutua distribuido. El lock
 
 -   [12-muty.pdf](./12-muty.pdf)
 
-## Groupy: a group membership service (Opcional)
+## Groupy: a group membership service [x]
 
 En este proyecto implementaremos un servicio de mebresía de grupo que provee multicast atómico. El objetivo es tener varias capas de aplicación con un estado coordinado, p. ej. todas deben ejecutar la misma secuencia de cambios de estado. Un nodo que desea hacer un cambio de su estado interno debe primero hacer multicast del cambio de forma tal que todos los nodos del grupo ejecuten el mismo cambio.
 Dado que la capa de multicast provee orden total, todos los nodos van a estar sincronizados.
