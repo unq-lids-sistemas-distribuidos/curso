@@ -50,6 +50,10 @@ La tarea es implementar un protocolo de ruteo __link-state__ en Erlang. El proto
 
 -   [06-routy.pdf](./labs/06-routy.pdf)
 
+__Ref__:
+
+  - Distributed Systems and Concepts - Chapter 3: Networking and Internetworking.
+
 ## Detector [x]
 
 Los detectores de fallas son el corazón de los sistemas distribuidos. En este pequeño tutorial se mostrará como funcionan en Erlang y sus limitaciones.
