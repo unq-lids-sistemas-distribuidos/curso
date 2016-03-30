@@ -116,6 +116,10 @@ In this session you will implement a transaction server using optimistic concurr
 
 -   [16-opty.pdf](./labs/16-opty.pdf)
 
+__Ref__:
+
+  - Distributed Systems and Concepts - Chapter 16: Transactions and Concurrency Control.
+
 ## Timey: time based concurrency control (Opcional)
 
 In this session you will implement a transaction server using time based concurrency control. You will also learn how to implement a updatable data structure in Erlang that can be accessed by concurrent, possibly distributed, processes. Before you start you should know how time based concurrency control.
