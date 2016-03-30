@@ -48,7 +48,7 @@ __Ref__:
 
 La tarea es implementar un protocolo de ruteo __link-state__ en Erlang. El protocolo link-state es usado por ejemplo en OSPF, el protocolo más usado por los routers de Internet. El objetivo de este ejercicio es ser capaces de: describir la estructura general del un protocolo de ruteo link-state, describir como se mantiene una vista consistente y reflejar los problemas relacionados a fallos de red.
 
--   [06-routy.pdf](./06-routy.pdf)
+-   [06-routy.pdf](./labs/06-routy.pdf)
 
 ## Detector [x]
 
@@ -110,7 +110,7 @@ In this exercise you will learn how to implement a snap-shot algorithm. As an ex
 
 In this session you will implement a transaction server using optimistic concurrency control. You will also learn how to implement a updatable data structure in Erlang that can be accessed by concurrent, possibly distributed, processes. Before you start you should know how optimistic concurrency control with backwards validation works.
 
--   [16-opty.pdf](./16-opty.pdf)
+-   [16-opty.pdf](./labs/16-opty.pdf)
 
 ## Timey: time based concurrency control (Opcional)
 
