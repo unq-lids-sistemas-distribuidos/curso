@@ -70,7 +70,7 @@ En esta tarea construiremos una red de media streaming. Jugaremos con streams de
 
 En este ejercicio vamos a aprender a usar tiempo lógico de forma práctica. La tarea es implementar un sistema de logging que reciva eventos de log de un conjunto de workers. Los eventos estarán tageados con un timestamp de Lamport del worker y deben ser ordenados antes de ser mostrados en pantalla (stdout). Es un poco más complicado de lo que uno podría pesar en primer lugar.
 
--   [09-loggy.pdf](./09-loggy.pdf)
+-   [09-loggy.pdf](./labs/09-loggy.pdf)
 
 ## Goldy: un juego distribuido (Opcional)
 
