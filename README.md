@@ -1,6 +1,6 @@
 # Sistemas Distribuidos (en Erlang)
 
-Este curso está basado en el excelente material de **Johan Morellius**  (https://people.kth.se/~johanmon/dse.html).
+Este curso está basado en el excelente material de **Johan Montelius**  (https://people.kth.se/~johanmon/dse.html).
 
 Estos son una serie de trabajos usados en diversos cursos en Sistemas Distribuidos. Los mismos fueron usados para ejemplificar diferentes sistemas, algoritmos o aspectos como performance y fault tolerance.
 
