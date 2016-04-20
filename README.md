@@ -90,29 +90,28 @@ La tarea es implementar un lock que provea exclusión mutua distribuido. El lock
 
 -   [12-muty.pdf](./12-muty.pdf)
 
-## Groupy: a group membership service [x]
+## Groupy: un servicio de membresía de grupo [x]
 
 En este proyecto implementaremos un servicio de mebresía de grupo que provee multicast atómico. El objetivo es tener varias capas de aplicación con un estado coordinado, p. ej. todas deben ejecutar la misma secuencia de cambios de estado. Un nodo que desea hacer un cambio de su estado interno debe primero hacer multicast del cambio de forma tal que todos los nodos del grupo ejecuten el mismo cambio.
 Dado que la capa de multicast provee orden total, todos los nodos van a estar sincronizados.
 
 -   [13-groupy.pdf](./13-groupy.pdf)
 
-## Snapy: the search for dead marbles (Opcional)
+## Snapy: la búsqueda de las __bolitas__ muertas (Opcional)
 
-In this exercise you will learn how to implement a snap-shot algorithm. We will use a very simple scenario with a set of workers that create and share _marbles_ with each other. The problem is to find out which marbles are alive so that references to dead marbles can be removed. It's in a sense a simplified garbage collection problem. The problem is simplified by the fact that the data structures, the marbles, are atomic and that we do not create duplicates of marbles. We could have solved the problem using a simpler solution but why not
-play around with a snap-shot algorithm.
+En este ejercicio vamos a aprender a implementar un algoritmo de snapshot. Vamos a usar un escenario muy simple con un conjunto de workers que crean y comparten _bolitas_ entre si. EL problema es encontrar cuales bolitas están vivas así las referencias a las bolitas muertas pueden ser removidas. En cierto sentido es un problema de garbage collection simplificado. El problema está simplificado por el hecho de que la estructura de datos de las bolitas, son atómicos y que no podemos crear bolitas duplicadas. Podemos entonces resolver el problema usando una solución más simple, pero por que no jugar con un algoritmo de snapshot.
 
 -   [14-snapy.pdf](./14-snapy.pdf)
 
-## Garby: a distributed grabage collector (Opcional)
+## Garby: un garbage collector distribuido (Opcional)
 
-In this exercise you will learn how to implement a snap-shot algorithm. As an example we will try to detect garbage in a distributed computing. This is tricky and as you will see, a quite expensive operation. Not taking the snap-shot in itself but how to interpret the snap-shot and how to make the most use of the gained information.
+En este ejercicio vamos a aprender como imlementar un algoritmo de snapshot. Vamos a tratar de detectar garbage en un sistema distribuido. Vamos a ver que complejo y que además es una operación bastante costosa. No vamos a hablar de snapshots en si mismo sino como interpretar el snapshot y como hacer el mejor uso de la información recolectada.
 
 -   [15-garby.pdf](./15-garby.pdf)
 
-## Opty: optimistic concurrency control [x]
+## Opty: control de concurrencia optimista [x]
 
-In this session you will implement a transaction server using optimistic concurrency control. You will also learn how to implement a updatable data structure in Erlang that can be accessed by concurrent, possibly distributed, processes. Before you start you should know how optimistic concurrency control with backwards validation works.
+En esta sesión vamos a implementar un servidor de transacciones usando control de concurrencia optimista. Vamos aprender además como implementar una estructura actualizable en Erlang que puede ser accedida por procesos, posiblemente distribuidos. Antes de empezar cada uno debería conocer como funciona el control de concurrencia con validación backwards.
 
 -   [16-opty.pdf](./labs/16-opty.pdf)
 
@@ -120,24 +119,23 @@ __Ref__:
 
   - Distributed Systems and Concepts - Chapter 16: Transactions and Concurrency Control.
 
-## Timey: time based concurrency control (Opcional)
+## Timey: control de concurrencia basado en tiempo (Opcional)
 
-In this session you will implement a transaction server using time based concurrency control. You will also learn how to implement a updatable data structure in Erlang that can be accessed by concurrent, possibly distributed, processes. Before you start you should know how time based concurrency control.
+En esta sesión vamos a implementar un servidor de transacciones usando control de concurrencia basada en tiempo. Vamos aprender además como implementar una estructura actualizable en Erlang que puede ser accedida por procesos, posiblemente distribuidos. Antes de empezar cada uno debería conocer como funciona el control de concurrencia basado en tiempo.
 
 -   [17-timey.pdf](./17-timey.pdf)
 
-## Paxy: the paxos protocol (Opcional)
+## Paxy: el protocolo Paxos (Opcional)
 
-This exercise will give you the opportunity to learn the Paxos algorithm for gaining consensus in a distributed system. You should know the basic operations of the algorithm but you do not have to know all the details, that is the purpose of this exercise.
+Este ejercicio nos va a dar la oportunidad de aprender el algoritmo de Paxos para establecer consenso en un sistema distribuido. Cada uno debería conocer las operaciones básicas del algortimo pero no todos los detalles, ya que ese es el propósito del ejercicio.
 
 -   [18-paxy.pdf](./18-paxy.pdf)
 
-## Chordy: a distributed hash table (Opcional)
+## Chordy: una tabla hash distribuida (Opcional)
 
-In this assignment you will implement a distributed hash table following the Chord scheme. In order to understand what you're about to do you should have a basic understanding of Chord and preferably have read the original paper.
+En este ejercicio vamos a implementar una tabla hash distribuida siguiendo el esquema Chord. Para entender lo que estamos a punto de hacer cada uno debe tener un conocimiento básico de Chord y preferentemente leer el paper original.
 
 -   [19-chordy.pdf](./19-chordy.pdf)
-
 
 ## Slides
 
