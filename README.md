@@ -72,6 +72,10 @@ En este ejercicio vamos a aprender a usar tiempo lógico de forma práctica. La 
 
 -   [09-loggy.pdf](./labs/09-loggy.pdf)
 
+__Ref:__
+
+-   Distributed Systems and Concepts - Section 14.4 Logical time and logical clocks.
+
 ## Goldy: un juego distribuido (Opcional)
 
 Este curso sirve a 2 propósitos; aprender a programar aplicaciones distribuidas en Erlang y entender por qué las aplicaciones distribuidas no son tan fáciles de controlar como podría pensarse en primer lugar.
@@ -117,7 +121,7 @@ En esta sesión vamos a implementar un servidor de transacciones usando control 
 
 __Ref__:
 
-  - Distributed Systems and Concepts - Chapter 16: Transactions and Concurrency Control.
+  - Distributed Systems and Concepts - Chapter 16 Transactions and Concurrency Control.
 
 ## Timey: control de concurrencia basado en tiempo (Opcional)
 
