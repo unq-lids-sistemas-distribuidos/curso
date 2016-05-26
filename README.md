@@ -92,7 +92,7 @@ La tarea es implementar un servicio multicast con orden total usando un algoritm
 
 La tarea es implementar un lock que provea exclusión mutua distribuido. El lock va a usar una estrategia de multicast y trabajar en una red asincrónica donde no tenemos acceso a un reloj sincronizado. Vamos a hacer la implementación en 3 versiones: la propensa a deadlock, la unfair y la basada en relojes de Lamport. Antes de empezar deberíamos tener una buena base teórica de multicast y como funcionan los relojes de Lamport.
 
--   [12-muty.pdf](./12-muty.pdf)
+-   [12-muty.pdf](./labs/12-muty.pdf)
 
 ## Groupy: un servicio de membresía de grupo [x]
 
