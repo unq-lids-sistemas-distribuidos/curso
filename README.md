@@ -88,6 +88,11 @@ La tarea es implementar un servicio multicast con orden total usando un algoritm
 
 -   [11-toty.pdf](./11-toty.pdf)
 
+__Ref__:
+
+  - Distributed Systems and Concepts - Chapter 6.2 Group communication.
+  - Distributed Systems and Concepts - Chapter 18.2 System model and the role of group communication.
+  
 ## Muty (Opcional)
 
 La tarea es implementar un lock que provea exclusión mutua distribuido. El lock va a usar una estrategia de multicast y trabajar en una red asincrónica donde no tenemos acceso a un reloj sincronizado. Vamos a hacer la implementación en 3 versiones: la propensa a deadlock, la unfair y la basada en relojes de Lamport. Antes de empezar deberíamos tener una buena base teórica de multicast y como funcionan los relojes de Lamport.
@@ -100,6 +105,11 @@ En este proyecto implementaremos un servicio de mebresía de grupo que provee mu
 Dado que la capa de multicast provee orden total, todos los nodos van a estar sincronizados.
 
 -   [13-groupy.pdf](./13-groupy.pdf)
+
+__Ref__:
+
+  - Distributed Systems and Concepts - Chapter 6.2 Group communication.
+  - Distributed Systems and Concepts - Chapter 18.2 System model and the role of group communication.
 
 ## Snapy: la búsqueda de las __bolitas__ muertas (Opcional)
 
