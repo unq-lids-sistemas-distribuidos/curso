@@ -20,13 +20,13 @@ Esto no es un curso rápido de Erlang dado que hay muchos tutoriales disponibles
 
 Calcular un conjunto de Mandelbrot es una tarea que puede ser hecha en paralelo si se tienen varios cores o varias máquinas. La implementación brindada no es la más rápida pero sirve con el propósito de ser una tarea para comenzar; puede ser facilmente mejorarda.
 
--   [02-mandel](./02-mandel.pdf)
+-   [02-mandel](./labs/02-mandel.pdf)
 
 ## Primy: encontrando números primos grandes (Opcional)
 
 En esta tarea hay que implementar un sistema distribuido que encuentre números primos grandes. El sistema debe tener un server que se encarga de controlar el cálculo y un conjunto dinámico de workers a los que se asigna testear si un número dado es primo o no.
 
--   [03-primy](./03-primy.pdf)
+-   [03-primy](./labs/03-primy.pdf)
 
 ## Rudy: un pequeño web server [x]
 
@@ -64,7 +64,7 @@ Los detectores de fallas son el corazón de los sistemas distribuidos. En este p
 
 En esta tarea construiremos una red de media streaming. Jugaremos con streams de _shoutcast_ y construiremos proxies, distributors y clientes peer-to-peer. Usaremos la __bit-syntax__ de Erlang para implementar el protocolo de comunicación sobre HTTP. El parser será implementado usando funciones de alto orden para esconder la interfaz de sockets. Aprenderemos como decodificar un stream de audio mp3 y ponerlo disponible para la conexión de reproductores de audio.
 
--   [08-casty.pdf](./08-casty.pdf)
+-   [08-casty.pdf](./labs/08-casty.pdf)
 
 ## Loggy: un time logger lógico [x]
 
@@ -80,23 +80,23 @@ __Ref:__
 
 Este curso sirve a 2 propósitos; aprender a programar aplicaciones distribuidas en Erlang y entender por qué las aplicaciones distribuidas no son tan fáciles de controlar como podría pensarse en primer lugar.
 
--   [10-goldy.pdf](./10-goldy.pdf)
+-   [10-goldy.pdf](./labs/10-goldy.pdf)
 
 ## Toty (Opcional)
 
 La tarea es implementar un servicio multicast con orden total usando un algoritmo distribuido. El algoritmo es el usado por el sistema __ISIS__ y está basado en pedir propuestas a todos los nodos de un grupo.
 
--   [11-toty.pdf](./11-toty.pdf)
+-   [11-toty.pdf](./labs/11-toty.pdf)
 
 __Ref__:
 
   - Distributed Systems and Concepts - Chapter 6.2 Group communication.
   - Distributed Systems and Concepts - Chapter 18.2 System model and the role of group communication.
-  
+
 ## Muty (Opcional)
 
 La tarea es implementar un lock que provea exclusión mutua distribuido. El lock va a usar una estrategia de multicast y trabajar en una red asincrónica donde no tenemos acceso a un reloj sincronizado. Vamos a hacer la implementación en 3 versiones: la propensa a deadlock, la unfair y la basada en relojes de Lamport. Antes de empezar deberíamos tener una buena base teórica de multicast y como funcionan los relojes de Lamport.
- 
+
 -   [12-muty.pdf](./labs/12-muty.pdf)
 
 ## Groupy: un servicio de membresía de grupo [x]
@@ -104,7 +104,7 @@ La tarea es implementar un lock que provea exclusión mutua distribuido. El lock
 En este proyecto implementaremos un servicio de mebresía de grupo que provee multicast atómico. El objetivo es tener varias capas de aplicación con un estado coordinado, p. ej. todas deben ejecutar la misma secuencia de cambios de estado. Un nodo que desea hacer un cambio de su estado interno debe primero hacer multicast del cambio de forma tal que todos los nodos del grupo ejecuten el mismo cambio.
 Dado que la capa de multicast provee orden total, todos los nodos van a estar sincronizados.
 
--   [13-groupy.pdf](./13-groupy.pdf)
+-   [13-groupy.pdf](./labs/13-groupy.pdf)
 
 __Ref__:
 
@@ -115,13 +115,13 @@ __Ref__:
 
 En este ejercicio vamos a aprender a implementar un algoritmo de snapshot. Vamos a usar un escenario muy simple con un conjunto de workers que crean y comparten _bolitas_ entre si. EL problema es encontrar cuales bolitas están vivas así las referencias a las bolitas muertas pueden ser removidas. En cierto sentido es un problema de garbage collection simplificado. El problema está simplificado por el hecho de que la estructura de datos de las bolitas, son atómicos y que no podemos crear bolitas duplicadas. Podemos entonces resolver el problema usando una solución más simple, pero por que no jugar con un algoritmo de snapshot.
 
--   [14-snapy.pdf](./14-snapy.pdf)
+-   [14-snapy.pdf](./labs/14-snapy.pdf)
 
 ## Garby: un garbage collector distribuido (Opcional)
 
 En este ejercicio vamos a aprender como imlementar un algoritmo de snapshot. Vamos a tratar de detectar garbage en un sistema distribuido. Vamos a ver que complejo y que además es una operación bastante costosa. No vamos a hablar de snapshots en si mismo sino como interpretar el snapshot y como hacer el mejor uso de la información recolectada.
 
--   [15-garby.pdf](./15-garby.pdf)
+-   [15-garby.pdf](./labs/15-garby.pdf)
 
 ## Opty: control de concurrencia optimista [x]
 
@@ -137,19 +137,19 @@ __Ref__:
 
 En esta sesión vamos a implementar un servidor de transacciones usando control de concurrencia basada en tiempo. Vamos aprender además como implementar una estructura actualizable en Erlang que puede ser accedida por procesos, posiblemente distribuidos. Antes de empezar cada uno debería conocer como funciona el control de concurrencia basado en tiempo.
 
--   [17-timey.pdf](./17-timey.pdf)
+-   [17-timey.pdf](./labs/17-timey.pdf)
 
 ## Paxy: el protocolo Paxos (Opcional)
 
 Este ejercicio nos va a dar la oportunidad de aprender el algoritmo de Paxos para establecer consenso en un sistema distribuido. Cada uno debería conocer las operaciones básicas del algortimo pero no todos los detalles, ya que ese es el propósito del ejercicio.
 
--   [18-paxy.pdf](./18-paxy.pdf)
+-   [18-paxy.pdf](./labs/18-paxy.pdf)
 
 ## Chordy: una tabla hash distribuida (Opcional)
 
 En este ejercicio vamos a implementar una tabla hash distribuida siguiendo el esquema Chord. Para entender lo que estamos a punto de hacer cada uno debe tener un conocimiento básico de Chord y preferentemente leer el paper original.
 
--   [19-chordy.pdf](./19-chordy.pdf)
+-   [19-chordy.pdf](./labs/19-chordy.pdf)
 
 ## Slides
 
