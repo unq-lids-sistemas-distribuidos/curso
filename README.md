@@ -109,7 +109,7 @@ Dado que la capa de multicast provee orden total, todos los nodos van a estar si
 __Ref__:
 
   - Distributed Systems and Concepts - Chapter 6.2 Group communication.
-  - (Algoritmo ISIS) Distributed Systems and Concepts - Chapter 15.4 Coordination and agreement in group communication
+  - (Algoritmo ISIS) Distributed Systems and Concepts - Chapter 15.4 Coordination and agreement in group communication 
   - Distributed Systems and Concepts - Chapter 18.2 System model and the role of group communication.
 
 ## Snapy: la búsqueda de las __bolitas__ muertas (Opcional)
