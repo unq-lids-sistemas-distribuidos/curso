@@ -16,7 +16,7 @@ Esto no es un curso rápido de Erlang dado que hay muchos tutoriales disponibles
 
 -   [01-crash](./labs/01-crash.pdf)
 
-## El Conjunto de  Mandelbrot (Opcional)
+## El Conjunto de Mandelbrot (Opcional)
 
 Calcular un conjunto de Mandelbrot es una tarea que puede ser hecha en paralelo si se tienen varios cores o varias máquinas. La implementación brindada no es la más rápida pero sirve con el propósito de ser una tarea para comenzar; puede ser facilmente mejorarda.
 
@@ -82,7 +82,7 @@ Este curso sirve a 2 propósitos; aprender a programar aplicaciones distribuidas
 
 -   [10-goldy.pdf](./labs/10-goldy.pdf)
 
-## Toty (Opcional)
+## Toty [x]
 
 La tarea es implementar un servicio multicast con orden total usando un algoritmo distribuido. El algoritmo es el usado por el sistema __ISIS__ y está basado en pedir propuestas a todos los nodos de un grupo.
 
@@ -94,7 +94,7 @@ __Ref__:
   - __(Algoritmo ISIS)__ Distributed Systems and Concepts - Chapter 15.4 Coordination and agreement in group communication
   - Distributed Systems and Concepts - Chapter 18.2 System model and the role of group communication.
 
-## Muty (Opcional)
+## Muty [x]
 
 La tarea es implementar un lock que provea exclusión mutua distribuido. El lock va a usar una estrategia de multicast y trabajar en una red asincrónica donde no tenemos acceso a un reloj sincronizado. Vamos a hacer la implementación en 3 versiones: la propensa a deadlock, la unfair y la basada en relojes de Lamport. Antes de empezar deberíamos tener una buena base teórica de multicast y como funcionan los relojes de Lamport.
 
