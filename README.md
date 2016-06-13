@@ -16,7 +16,7 @@ encuentran en otras ediciones del libro con distinto número de sección.
 
 ## Una Introducción a Erlang [x]
 
-Esto no es un curso rápido de Erlang dado que hay muchos tutoriales disponibles en la web. Sin embargo en se describirán las herramientas que se necesitan para tener un ambiente andando. Se da por sentado que tienen una cierta experiencia en lenguajes de programación y programación funcional y particularmente recursión.
+Esto no es un curso rápido de Erlang dado que hay muchos tutoriales disponibles en la web. Sin embargo se describirán las herramientas que se necesitan para tener un ambiente andando. Se da por sentado que tienen una cierta experiencia en lenguajes de programación y programación funcional y particularmente recursión.
 
 -   [01-crash](./labs/01-crash.pdf)
 
