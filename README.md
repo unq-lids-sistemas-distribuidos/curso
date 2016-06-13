@@ -9,7 +9,7 @@ La modalidad del curso será la de taller y durante el recorrido del curso los a
 
 Los trabajos asumen cierto connocimiento básico de Erlang, pero se ha limitado el uso a un conjunto de funcionalidades básicas. Se omitió el uso de OTP, dado que se piensa que esconde la complejidad subyacente de muchos de los trabajos. Tampoco que usan librerías que manejan comunicación de grupos o registro global. EL objetivo es que los alumnos desarrollen las soluciones a estos problemas entendiendo mejor los pros y contras de las diferentes estrategias. Sin embargo, se recomienda a aquellos interesados al promediar el curso o posterior al mismo aparender los servicios y beneficios de OTP, base fundamental del desarrollo de sistemas altamente escalables y tolerantes a falla en Erlang.
 
-Los trabajos están licenciados bajo Creative Commons Attribution.
+Los trabajos están licenciados bajo [Creative Commons Attribution](http://creativecommons.org/licenses/by/4.0/).
 
 __Nota__: Los números de secciones de _Distributed Systems Concepts and Design_ refieren a la 5ta edición. Todos los temas se
 encuentran en otras ediciones del libro con distinto número de sección.
