@@ -10,6 +10,9 @@ Los trabajos asumen cierto connocimiento básico de Erlang, pero se ha limitado 
 
 Los trabajos están licenciados bajo Creative Commons Attribution.
 
+__Nota__: Los números de secciones de _Distributed Systems Concepts and Design_ refieren a la 5ta edición. Todos los temas se
+encuentran en otras ediciones del libro con distinto número de sección.
+
 ## Una Introducción a Erlang [x]
 
 Esto no es un curso rápido de Erlang dado que hay muchos tutoriales disponibles en la web. Sin embargo en se describirán las herramientas que se necesitan para tener un ambiente andando. Se da por sentado que tienen una cierta experiencia en lenguajes de programación y programación funcional y particularmente recursión.
