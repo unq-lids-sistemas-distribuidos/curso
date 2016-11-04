@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Curso by unq-lids-sistemas-distribuidos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Curso</h1>
+      <h2 class="project-tagline">Material del curso de Sistemas Distribuidos</h2>
+      <a href="https://github.com/unq-lids-sistemas-distribuidos/curso" class="btn">View on GitHub</a>
+      <a href="https://github.com/unq-lids-sistemas-distribuidos/curso/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/unq-lids-sistemas-distribuidos/curso/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="sistemas-distribuidos-en-erlang" class="anchor" href="#sistemas-distribuidos-en-erlang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sistemas Distribuidos (en Erlang)</h1>
+
+<p>Este curso está basado en el excelente material de <strong>Johan Montelius</strong>  (<a href="https://people.kth.se/%7Ejohanmon/dse.html">https://people.kth.se/~johanmon/dse.html</a>) y la 
+bibliografía <strong>Distributed Systems Concepts and Design (Gerorge Coulouris, Jean Dollimore &amp; Tim Kindberg)</strong>.</p>
+
+<p>Estos son una serie de trabajos usados en diversos cursos en Sistemas Distribuidos. Los mismos fueron usados para ejemplificar diferentes sistemas, algoritmos o aspectos como performance y fault tolerance.</p>
+
+<p>La modalidad del curso será la de taller y durante el recorrido del curso los alumnos irán estudiando los diversos aspectos de los sistemas distribuidos a medida que resuelven los problemas que se van presentando y experimentan en el laboratorio. Una vez finalizado el trabajo se pide a los alumnos que escriban un reporte para ser discutido en clase sobre los hallazgos, problemas que se presentaron y posibles extensiones.</p>
+
+<p>Los trabajos asumen cierto connocimiento básico de Erlang, pero se ha limitado el uso a un conjunto de funcionalidades básicas. Se omitió el uso de OTP, dado que se piensa que esconde la complejidad subyacente de muchos de los trabajos. Tampoco que usan librerías que manejan comunicación de grupos o registro global. EL objetivo es que los alumnos desarrollen las soluciones a estos problemas entendiendo mejor los pros y contras de las diferentes estrategias. Sin embargo, se recomienda a aquellos interesados al promediar el curso o posterior al mismo aparender los servicios y beneficios de OTP, base fundamental del desarrollo de sistemas altamente escalables y tolerantes a falla en Erlang.</p>
+
+<p>Los trabajos están licenciados bajo <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution</a>.</p>
+
+<p><strong>Nota</strong>: Los números de secciones de <em>Distributed Systems Concepts and Design</em> refieren a la 5ta edición. Todos los temas se
+encuentran en otras ediciones del libro con distinto número de sección.</p>
+
+<h2>
+<a id="una-introducción-a-erlang-x" class="anchor" href="#una-introducci%C3%B3n-a-erlang-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Una Introducción a Erlang [x]</h2>
+
+<p>Esto no es un curso rápido de Erlang dado que hay muchos tutoriales disponibles en la web. Sin embargo se describirán las herramientas que se necesitan para tener un ambiente andando. Se da por sentado que tienen una cierta experiencia en lenguajes de programación y programación funcional y particularmente recursión.</p>
+
+<ul>
+<li>  <a href="./labs/01-crash.pdf">01-crash</a>
+</li>
+</ul>
+
+<h2>
+<a id="el-conjunto-de-mandelbrot-opcional" class="anchor" href="#el-conjunto-de-mandelbrot-opcional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>El Conjunto de Mandelbrot (Opcional)</h2>
+
+<p>Calcular un conjunto de Mandelbrot es una tarea que puede ser hecha en paralelo si se tienen varios cores o varias máquinas. La implementación brindada no es la más rápida pero sirve con el propósito de ser una tarea para comenzar; puede ser facilmente mejorarda.</p>
+
+<ul>
+<li>  <a href="./labs/02-mandel.pdf">02-mandel</a>
+</li>
+</ul>
+
+<h2>
+<a id="primy-encontrando-números-primos-grandes-opcional" class="anchor" href="#primy-encontrando-n%C3%BAmeros-primos-grandes-opcional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Primy: encontrando números primos grandes (Opcional)</h2>
+
+<p>En esta tarea hay que implementar un sistema distribuido que encuentre números primos grandes. El sistema debe tener un server que se encarga de controlar el cálculo y un conjunto dinámico de workers a los que se asigna testear si un número dado es primo o no.</p>
+
+<ul>
+<li>  <a href="./labs/03-primy.pdf">03-primy</a>
+</li>
+</ul>
+
+<h2>
+<a id="rudy-un-pequeño-web-server-x" class="anchor" href="#rudy-un-peque%C3%B1o-web-server-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Rudy: un pequeño web server [x]</h2>
+
+<p>En esta tarea se debe implementar un pequeño web server. El objetivo de este ejercicio es ser capaces de: describir el procedimiento para usar la API de <strong>sockets</strong>, describir la estructura de un proceso server y describir el protocolo <strong>HTTP</strong>. Como efecto secundario se aprenderá a utilizar algunas caraterísticas de Erlang.</p>
+
+<ul>
+<li>  <a href="./labs/04-rudy.pdf">04-rudy.pdf</a>
+</li>
+</ul>
+
+<h2>
+<a id="namy-un-name-server-distribuido-x" class="anchor" href="#namy-un-name-server-distribuido-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Namy: un name server distribuido [x]</h2>
+
+<p>La tarea será implementar un <em>name server</em> distribuido similar a <em>DNS</em>. En lugar de direcciones vamos a almacenar identificadores de procesos a hosts. No va a poder inter-operar con servidores de DNS reales pero nos mostrará los principios de caching en una estructura de árbol.</p>
+
+<ul>
+<li>  <a href="./labs/05-namy.pdf">05-namy.pdf</a>
+</li>
+</ul>
+
+<p><strong>Ref</strong>:</p>
+
+<ul>
+<li>Distributed Systems and Concepts - Chapter 13: Name Services.</li>
+</ul>
+
+<h2>
+<a id="routy-un-pequeño-protocolo-de-ruteo-x" class="anchor" href="#routy-un-peque%C3%B1o-protocolo-de-ruteo-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Routy: un pequeño protocolo de ruteo [x]</h2>
+
+<p>La tarea es implementar un protocolo de ruteo <strong>link-state</strong> en Erlang. El protocolo link-state es usado por ejemplo en OSPF, el protocolo más usado por los routers de Internet. El objetivo de este ejercicio es ser capaces de: describir la estructura general del un protocolo de ruteo link-state, describir como se mantiene una vista consistente y reflejar los problemas relacionados a fallos de red.</p>
+
+<ul>
+<li>  <a href="./labs/06-routy.pdf">06-routy.pdf</a>
+</li>
+</ul>
+
+<p><strong>Ref</strong>:</p>
+
+<ul>
+<li>Distributed Systems and Concepts - Chapter 3: Networking and Internetworking.</li>
+</ul>
+
+<h2>
+<a id="detector-x" class="anchor" href="#detector-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Detector [x]</h2>
+
+<p>Los detectores de fallas son el corazón de los sistemas distribuidos. En este pequeño tutorial se mostrará como funcionan en Erlang y sus limitaciones.</p>
+
+<ul>
+<li>  <a href="./labs/07-detector.pdf">07-detector.pdf</a>
+</li>
+</ul>
+
+<h2>
+<a id="casty-opcional" class="anchor" href="#casty-opcional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Casty (Opcional)</h2>
+
+<p>En esta tarea construiremos una red de media streaming. Jugaremos con streams de <em>shoutcast</em> y construiremos proxies, distributors y clientes peer-to-peer. Usaremos la <strong>bit-syntax</strong> de Erlang para implementar el protocolo de comunicación sobre HTTP. El parser será implementado usando funciones de alto orden para esconder la interfaz de sockets. Aprenderemos como decodificar un stream de audio mp3 y ponerlo disponible para la conexión de reproductores de audio.</p>
+
+<ul>
+<li>  <a href="./labs/08-casty.pdf">08-casty.pdf</a>
+</li>
+</ul>
+
+<h2>
+<a id="loggy-un-time-logger-lógico-x" class="anchor" href="#loggy-un-time-logger-l%C3%B3gico-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Loggy: un time logger lógico [x]</h2>
+
+<p>En este ejercicio vamos a aprender a usar tiempo lógico de forma práctica. La tarea es implementar un sistema de logging que reciva eventos de log de un conjunto de workers. Los eventos estarán tageados con un timestamp de Lamport del worker y deben ser ordenados antes de ser mostrados en pantalla (stdout). Es un poco más complicado de lo que uno podría pesar en primer lugar.</p>
+
+<ul>
+<li>  <a href="./labs/09-loggy.pdf">09-loggy.pdf</a>
+</li>
+</ul>
+
+<p><strong>Ref:</strong></p>
+
+<ul>
+<li>  Distributed Systems and Concepts - Section 14.4 Logical time and logical clocks.</li>
+</ul>
+
+<h2>
+<a id="goldy-un-juego-distribuido-opcional" class="anchor" href="#goldy-un-juego-distribuido-opcional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Goldy: un juego distribuido (Opcional)</h2>
+
+<p>Este curso sirve a 2 propósitos; aprender a programar aplicaciones distribuidas en Erlang y entender por qué las aplicaciones distribuidas no son tan fáciles de controlar como podría pensarse en primer lugar.</p>
+
+<ul>
+<li>  <a href="./labs/10-goldy.pdf">10-goldy.pdf</a>
+</li>
+</ul>
+
+<h2>
+<a id="toty-x" class="anchor" href="#toty-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Toty [x]</h2>
+
+<p>La tarea es implementar un servicio multicast con orden total usando un algoritmo distribuido. El algoritmo es el usado por el sistema <strong>ISIS</strong> y está basado en pedir propuestas a todos los nodos de un grupo.</p>
+
+<ul>
+<li>  <a href="./labs/11-toty.pdf">11-toty.pdf</a>
+</li>
+</ul>
+
+<p><strong>Ref</strong>:</p>
+
+<ul>
+<li>Distributed Systems and Concepts - Chapter 6.2 Group communication.</li>
+<li>
+<strong>(Algoritmo ISIS)</strong> Distributed Systems and Concepts - Chapter 15.4 Coordination and agreement in group communication</li>
+<li>Distributed Systems and Concepts - Chapter 18.2 System model and the role of group communication.</li>
+</ul>
+
+<h2>
+<a id="muty-x" class="anchor" href="#muty-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Muty [x]</h2>
+
+<p>La tarea es implementar un lock que provea exclusión mutua distribuido. El lock va a usar una estrategia de multicast y trabajar en una red asincrónica donde no tenemos acceso a un reloj sincronizado. Vamos a hacer la implementación en 3 versiones: la propensa a deadlock, la unfair y la basada en relojes de Lamport. Antes de empezar deberíamos tener una buena base teórica de multicast y como funcionan los relojes de Lamport.</p>
+
+<ul>
+<li>  <a href="./labs/12-muty.pdf">12-muty.pdf</a>
+</li>
+</ul>
+
+<p><strong>Ref</strong>:</p>
+
+<ul>
+<li>Distributed Systems and Concepts - Chapter 15.1 Introduction.</li>
+<li>Distributed Systems and Concepts - Chapter 15.2 Distributed mutual exclusion.</li>
+</ul>
+
+<h2>
+<a id="groupy-un-servicio-de-membresía-de-grupo-x" class="anchor" href="#groupy-un-servicio-de-membres%C3%ADa-de-grupo-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Groupy: un servicio de membresía de grupo [x]</h2>
+
+<p>En este proyecto implementaremos un servicio de mebresía de grupo que provee multicast atómico. El objetivo es tener varias capas de aplicación con un estado coordinado, p. ej. todas deben ejecutar la misma secuencia de cambios de estado. Un nodo que desea hacer un cambio de su estado interno debe primero hacer multicast del cambio de forma tal que todos los nodos del grupo ejecuten el mismo cambio.
+Dado que la capa de multicast provee orden total, todos los nodos van a estar sincronizados.</p>
+
+<ul>
+<li>  <a href="./labs/13-groupy.pdf">13-groupy.pdf</a>
+</li>
+</ul>
+
+<p><strong>Ref</strong>:</p>
+
+<ul>
+<li>Distributed Systems and Concepts - Chapter 6.2 Group communication.</li>
+<li>Distributed Systems and Concepts - Chapter 18.2 System model and the role of group communication.</li>
+</ul>
+
+<h2>
+<a id="snapy-la-búsqueda-de-las-bolitas-muertas-opcional" class="anchor" href="#snapy-la-b%C3%BAsqueda-de-las-bolitas-muertas-opcional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Snapy: la búsqueda de las <strong>bolitas</strong> muertas (Opcional)</h2>
+
+<p>En este ejercicio vamos a aprender a implementar un algoritmo de snapshot. Vamos a usar un escenario muy simple con un conjunto de workers que crean y comparten <em>bolitas</em> entre si. EL problema es encontrar cuales bolitas están vivas así las referencias a las bolitas muertas pueden ser removidas. En cierto sentido es un problema de garbage collection simplificado. El problema está simplificado por el hecho de que la estructura de datos de las bolitas, son atómicos y que no podemos crear bolitas duplicadas. Podemos entonces resolver el problema usando una solución más simple, pero por que no jugar con un algoritmo de snapshot.</p>
+
+<ul>
+<li>  <a href="./labs/14-snapy.pdf">14-snapy.pdf</a>
+</li>
+</ul>
+
+<h2>
+<a id="garby-un-garbage-collector-distribuido-opcional" class="anchor" href="#garby-un-garbage-collector-distribuido-opcional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Garby: un garbage collector distribuido (Opcional)</h2>
+
+<p>En este ejercicio vamos a aprender como imlementar un algoritmo de snapshot. Vamos a tratar de detectar garbage en un sistema distribuido. Vamos a ver que complejo y que además es una operación bastante costosa. No vamos a hablar de snapshots en si mismo sino como interpretar el snapshot y como hacer el mejor uso de la información recolectada.</p>
+
+<ul>
+<li>  <a href="./labs/15-garby.pdf">15-garby.pdf</a>
+</li>
+</ul>
+
+<h2>
+<a id="opty-control-de-concurrencia-optimista-x" class="anchor" href="#opty-control-de-concurrencia-optimista-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Opty: control de concurrencia optimista [x]</h2>
+
+<p>En esta sesión vamos a implementar un servidor de transacciones usando control de concurrencia optimista. Vamos aprender además como implementar una estructura actualizable en Erlang que puede ser accedida por procesos, posiblemente distribuidos. Antes de empezar cada uno debería conocer como funciona el control de concurrencia con validación backwards.</p>
+
+<ul>
+<li>  <a href="./labs/16-opty.pdf">16-opty.pdf</a>
+</li>
+</ul>
+
+<p><strong>Ref</strong>:</p>
+
+<ul>
+<li>Distributed Systems and Concepts - Chapter 16 Transactions and Concurrency Control.</li>
+</ul>
+
+<h2>
+<a id="timey-control-de-concurrencia-basado-en-tiempo-opcional" class="anchor" href="#timey-control-de-concurrencia-basado-en-tiempo-opcional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Timey: control de concurrencia basado en tiempo (Opcional)</h2>
+
+<p>En esta sesión vamos a implementar un servidor de transacciones usando control de concurrencia basada en tiempo. Vamos aprender además como implementar una estructura actualizable en Erlang que puede ser accedida por procesos, posiblemente distribuidos. Antes de empezar cada uno debería conocer como funciona el control de concurrencia basado en tiempo.</p>
+
+<ul>
+<li>  <a href="./labs/17-timey.pdf">17-timey.pdf</a>
+</li>
+</ul>
+
+<h2>
+<a id="paxy-el-protocolo-paxos-opcional" class="anchor" href="#paxy-el-protocolo-paxos-opcional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Paxy: el protocolo Paxos (Opcional)</h2>
+
+<p>Este ejercicio nos va a dar la oportunidad de aprender el algoritmo de Paxos para establecer consenso en un sistema distribuido. Cada uno debería conocer las operaciones básicas del algortimo pero no todos los detalles, ya que ese es el propósito del ejercicio.</p>
+
+<ul>
+<li>  <a href="./labs/18-paxy.pdf">18-paxy.pdf</a>
+</li>
+</ul>
+
+<h2>
+<a id="chordy-una-tabla-hash-distribuida-opcional" class="anchor" href="#chordy-una-tabla-hash-distribuida-opcional" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Chordy: una tabla hash distribuida (Opcional)</h2>
+
+<p>En este ejercicio vamos a implementar una tabla hash distribuida siguiendo el esquema Chord. Para entender lo que estamos a punto de hacer cada uno debe tener un conocimiento básico de Chord y preferentemente leer el paper original.</p>
+
+<ul>
+<li>  <a href="./labs/19-chordy.pdf">19-chordy.pdf</a>
+</li>
+</ul>
+
+<h2>
+<a id="slides" class="anchor" href="#slides" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Slides</h2>
+
+<ul>
+<li>Curso: <a href="./slides/00-sistemas_distribuidos.pdf">00-sistemas_distribuidos</a>
+</li>
+<li>Intro a Erlang: <a href="./slides/01-intro_erlang.pdf">01-intro_erlang</a>
+</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/unq-lids-sistemas-distribuidos/curso">Curso</a> is maintained by <a href="https://github.com/unq-lids-sistemas-distribuidos">unq-lids-sistemas-distribuidos</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
